@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+   <main class="container py-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+
+        <section class="login-card">
+
+          <div class="mb-4 text-center">
+            <h1 class="h3 mb-2">
+              Sign in to <strong>CodeGrade</strong>
+            </h1>
+
+            <p class="text-body-secondary mb-0">
+              Access your programming exams and track your results.
+            </p>
+          </div>
+
+          <form id="login-form" novalidate>
+
+            <div
+              id="login-error"
+              class="alert alert-danger d-none"
+              role="alert"
+            ></div>
+
+            <div class="mb-3">
+              <label for="username" class="form-label">
+                Username
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                autocomplete="username"
+                required
+              >
+
+              <div class="invalid-feedback">
+                Please enter your username.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">
+                Password
+              </label>
+
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  autocomplete="current-password"
+                  required
+                >
+
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="toggle-password"
+                  aria-label="Show password"
+                >
+                  Show
+                </button>
+
+                <div class="invalid-feedback">
+                  Please enter your password.
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary w-100"
+            >
+              Log In
+            </button>
+
+          </form>
+
+          <p class="text-center text-body-secondary small mt-4 mb-0">
+            Accounts are created and managed by the teacher.
+          </p>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+        <div id="footer-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/components/navbar.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+
+</body>
+</html>
